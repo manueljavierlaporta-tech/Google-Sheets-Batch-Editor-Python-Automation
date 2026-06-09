@@ -43,7 +43,7 @@ The script ensures:
 
 Each year points to a different Google Sheets file:
 
-\```python
+```python
 sheets = {
     "2021": {"key": "...", "gid": 875568155},
     "2022": {"key": "...", "gid": 875568155},
@@ -51,7 +51,7 @@ sheets = {
     "2024": {"key": "...", "gid": 875568155},
     "2025": {"key": "...", "gid": 1973933532},
 }
-\```
+```
 
 The `key` is the unique spreadsheet ID from its URL. The `gid` identifies the specific worksheet (tab) inside it.
 
@@ -63,14 +63,14 @@ The `key` is the unique spreadsheet ID from its URL. The `gid` identifies the sp
 
 Last names are reduced to their initials. Surrounding quotes are stripped if present.
 
-\```python
+```python
 valor_celda = valor_celda.strip('"').strip("'")
 partes = valor_celda.split(" ", 1)
 nombre = partes[0]
 apellido = " ".join(partes[1:])
 apellido_iniciales = "".join(palabra[0] for palabra in apellido.split())
 nuevo_valor_celda = f"{nombre} {apellido_iniciales}"
-\```
+```
 
 `"Juan Carlos García López"` → `"Juan CGL"`
 
@@ -78,9 +78,9 @@ nuevo_valor_celda = f"{nombre} {apellido_iniciales}"
 
 Each row is assigned a sequential subject number.
 
-\```python
+```python
 nuevo_valor = f"Asunto n° {i+1}"
-\```
+```
 
 ---
 
