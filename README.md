@@ -95,8 +95,5 @@ nuevo_valor = f"Asunto n° {i+1}"
 
 ## 🚀 Possible Improvements
 
-- Read column ranges dynamically instead of hardcoding `E` and `I`
-- Add a logging system per year
 - Export a summary of changes made
 - Add a rollback/backup mechanism before writing
-- Support for additional transformation functions per column
